@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/movieStyle.css">
+
+    <title>{{ site.sitename }} - {{ title }}</title>
+</head>
+<body>
+    <header> 
+        <h3><a href="/">Home</a></h3>
+    </header>
+    <hr>
+    <main> 
+        <h1> {{ title }} </h1>
+        <div class="image-container">
+                <img src="/assets/images/{{ imagename }}.jpg" alt="Amores Perros" class="movie-image">
+        </div>
+        {{ content | safe }}
+        <h3 class="score-heading">Score</h3>
+        <p id="movie-score" class="score">{{ score }}</p>
+    </main>
+    
+</body>
+</html>

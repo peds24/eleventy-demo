@@ -1,0 +1,15 @@
+---
+title: Welcome to my Review Corner
+layout: layout.njk
+---
+<h1> {{title}} </h1>
+
+<h2>Movies</h2>
+{% for movie in collections.movies %}
+    <a href=" {{movie.url}} "> {{ movie.data.title }}</a>
+{% endfor %}
+
+<h2>Books</h2>
+{% for book in collections.books %}
+    <a href=" {{book.url}} "> {{ book.data.title }}</a>
+{% endfor %}
